@@ -6,25 +6,25 @@ plugin called lightSwitch (http://archive.plugins.jquery.com/project/LightSwitch
 backgroundPosition plugin (http://keith-wood.name/backgroundPos.html) for cross browser purposes
 
 Usage
-=====
+-----
 
 <input type="checkbox" id="1" class="switch" />
 
 $('.switch').flipSwitch();
 
 Default Options
-===============
+---------------
 
-<p>animSpeed : 120,
-hoverSpeed : 100,
-switchImg : 'flipswitch/img/switch.png',
-switchImgCover: 'flipswitch/img/switchplate.png',
-switchImgCoverWidth : '63px',
-switchImgCoverHeight : '18px',
-disabledImg : 'flipswitch/img/disabled.png',
-onShift : '0px 0px',
-offShift : '-37px 0px',
-peekOff : '-6px 0px',
-peekOn : '-31px 0px'</p>
+animSpeed : 120,<br />
+hoverSpeed : 100,<br />
+switchImg : 'flipswitch/img/switch.png',<br />
+switchImgCover: 'flipswitch/img/switchplate.png',<br />
+switchImgCoverWidth : '63px',<br />
+switchImgCoverHeight : '18px',<br />
+disabledImg : 'flipswitch/img/disabled.png',<br />
+onShift : '0px 0px',<br />
+offShift : '-37px 0px',<br />
+peekOff : '-6px 0px',<br />
+peekOn : '-31px 0px'<br />
 
 
