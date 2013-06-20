@@ -12,6 +12,12 @@ Usage
 
 $('.switch').flipSwitch();
 
+Demo
+----
+
+Play around!<br />
+http://jsfiddle.net/delboy1978uk/ZqSVH/12/
+
 Default Options
 ---------------
 
