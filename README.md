@@ -8,7 +8,7 @@ backgroundPosition plugin (http://keith-wood.name/backgroundPos.html) for cross 
 Usage
 -----
 
-<input type="checkbox" id="1" class="switch" />
+&lt;input type="checkbox" id="1" class="switch" /&gt;<br />
 
 $('.switch').flipSwitch();
 
