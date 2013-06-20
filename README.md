@@ -15,7 +15,7 @@ $('.switch').flipSwitch();
 Default Options
 ===============
 
-animSpeed : 120,
+<p>animSpeed : 120,
 hoverSpeed : 100,
 switchImg : 'flipswitch/img/switch.png',
 switchImgCover: 'flipswitch/img/switchplate.png',
@@ -25,12 +25,6 @@ disabledImg : 'flipswitch/img/disabled.png',
 onShift : '0px 0px',
 offShift : '-37px 0px',
 peekOff : '-6px 0px',
-peekOn : '-31px 0px'
+peekOn : '-31px 0px'</p>
 
 
-
-=======
-flipswitch
-==========
-
-A jQuery flipswitch for checkboxes and radios
