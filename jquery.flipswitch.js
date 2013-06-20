@@ -1,5 +1,5 @@
 ﻿/*
- * jQuery FlipSwitch plugin
+ * jQuery FlipSwitch plugin originally lightswitch by catchmyfame.com
  * @author delboy1978uk@gmail.com
  * @version 1.0
  * @date June 19th 2013
