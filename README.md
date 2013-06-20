@@ -1,4 +1,4 @@
-jQuery Flipswitch
+jQuery FlipSwitch
 =================
 
 A jQuery flipSwitch() for checkboxes and radios. Rewritten to work on current versions of jQuery from an old abandoned
