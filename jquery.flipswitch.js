@@ -49,7 +49,7 @@
 				else
 				{	
 					//display the switch cover image		
-					$(this).css({'display':'none'}).after('<span class="switch"><img style="vertical-align: default;" src="'+o.switchImgCover+'" width="'+o.switchImgCoverWidth+'" height="'+o.switchImgCoverHeight+'" /></span>'); //'display':'none'
+					$(this).css({'display':'none'}).after('<span class="switch"><img style="vertical-align: top;" src="'+o.switchImgCover+'" width="'+o.switchImgCoverWidth+'" height="'+o.switchImgCoverHeight+'" /></span>'); //'display':'none'
 				}
 
 				// add the actual switch as the background image
