@@ -72,14 +72,15 @@
 					{
                         // flip it off, set checked = 0
 						$(this).stop().animate({'backgroundPosition':o.offShift},o.animSpeed); // off
-						$(this).prev('input').prop('checked',false);
+						//$(this).prev().prop('checked',false);
+                        $(this).prev().click();
 					}
 					else
 					{
                         // flip it on, set checked = checked
 						$(this).stop().animate({'backgroundPosition':o.onShift},o.animSpeed); // on
 						if($(this).prev().is(':radio')) $('input[name="'+radioGroupName+'"]'+':checked').prop('checked',false);
-						$(this).prev().prop('checked',true);
+						$(this).prev().click();
 					}
 				});
 
