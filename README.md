@@ -16,7 +16,7 @@ Demo
 ----
 
 Play around!<br />
-http://jsfiddle.net/delboy1978uk/ZqSVH/12/
+http://jsfiddle.net/ZqSVH/14/
 
 Default Options
 ---------------
