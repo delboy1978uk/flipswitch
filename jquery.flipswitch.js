@@ -41,23 +41,23 @@
 				var obj = $(this);
 
 				//if the checkbox is disabled
-				if($(this).attr('disabled'))
+				if(obj.attr('disabled'))
 				{
 					//display the disabled switch
-					$(this).css({'display':'none'}).after('<span><img src="'+o.disabledImg+'" /></span>');
+					obj.css({'display':'none'}).after('<span><img src="'+o.disabledImg+'" /></span>');
 				}
 				else
 				{	
 					//display the switch cover image		
-					$(this).css({'display':'none'}).after('<span class="switch"><img style="vertical-align: top;" src="'+o.switchImgCover+'" width="'+o.switchImgCoverWidth+'" height="'+o.switchImgCoverHeight+'" /></span>'); //'display':'none'
+					obj.css({'display':'none'}).after('<span class="switch"><img style="vertical-align: top;" src="'+o.switchImgCover+'" width="'+o.switchImgCoverWidth+'" height="'+o.switchImgCoverHeight+'" /></span>'); //'display':'none'
 				}
 
 				// add the actual switch as the background image
-				$(this).next('span.switch').css({'display':'inline-block','background-image':'url("'+o.switchImg+'")','background-repeat':'no-repeat','overflow':'hidden','cursor':'pointer','margin-right':'2px'});
+				obj.next('span.switch').css({'display':'inline-block','background-image':'url("'+o.switchImg+'")','background-repeat':'no-repeat','overflow':'hidden','cursor':'pointer','margin-right':'2px'});
 
 				
 				//do this when the switch gets clicked
-				$(this).next('span.switch').click(function()
+				obj.next('span.switch').click(function()
 				{
 					// If we click radio button, we need to animate the other switches off
 					if($(this).prev().is(':radio'))
@@ -85,7 +85,7 @@
 				});
 
 				//do this when the mouse hovers over the switch
-				$(this).next().hover(function()
+				obj.next().hover(function()
 				{
 					//peek on or peek off?
 					var peek = $(this).prev().is(':checked') ? o.peekOff : o.peekOn;
@@ -98,21 +98,21 @@
 					$(this).stop().animate({'backgroundPosition': shift},o.hoverSpeed);
 				});
 
-				var shift = $(this).is(':checked') ? o.onShift : o.offShift;
-				$(this).next('span.switch').css({'backgroundPosition' : shift}); // setup default states
+				var shift = obj.is(':checked') ? o.onShift : o.offShift;
+				obj.next('span.switch').css({'backgroundPosition' : shift}); // setup default states
 
 				$(document).on('click','input + span', function() { return false; });
 
 
-				$(this).change(function(){
-					radioGroupName = $(this).attr('name');
-					if($(this).is(':radio'))
+				obj.change(function(){
+					radioGroupName = obj.attr('name');
+					if(obj.is(':radio'))
 					{
-						$(this).stop().animate({'backgroundPosition':o.onShift},o.animSpeed);
+						obj.stop().animate({'backgroundPosition':o.onShift},o.animSpeed);
 						$('input[name="'+radioGroupName+'"]'+' + span').stop().animate({'backgroundPosition':o.offShift},o.animSpeed);
 					}
-					var shift =  $(this).is(':checked') ? o.onShift :o.offShift;
-					$(this).next('span').stop().animate({'backgroundPosition':shift},o.animSpeed);
+					var shift =  obj.is(':checked') ? o.onShift :o.offShift;
+					obj.next('span').stop().animate({'backgroundPosition':shift},o.animSpeed);
 				});
   			});
     	}
